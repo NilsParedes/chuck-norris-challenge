@@ -1,6 +1,4 @@
-
 # CHUCK NORRIS CHALLENGE
-
 
 Build
 -----
@@ -29,12 +27,15 @@ This will take a few minutes.
 
 4. Run the image's default command, which should start everything up. The `-p` option forwards the container's port 8081 to port 8081 on the host.
 
-        docker run -p 8081:8081 chuck-norris-challenge
+```bash
+  docker run -p 8081:8081 chuck-norris-challenge
+```
 
 5. Once everything has started up, you should be able to access via [http://localhost:8081/](http://localhost:8000/) on your host machine.
 
-        http://localhost:8081/
-
+```bash
+  http://localhost:8081/
+```
 
 ## API Reference
 
