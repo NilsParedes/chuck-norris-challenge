@@ -3,7 +3,7 @@
 FROM golang:alpine as build-env
 
 ENV APP_NAME chuck-norris-challenge
-ENV CMD_PATH main.go
+ENV CMD_PATH /cmd/app/main.go
 
 COPY . $GOPATH/src/$APP_NAME
 WORKDIR $GOPATH/src/$APP_NAME
