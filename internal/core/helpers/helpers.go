@@ -1,6 +1,6 @@
 package helpers
 
-import "github.com/nilsparedes/chuck-norris-challenge/entities"
+import entities "github.com/nilsparedes/chuck-norris-challenge/internal/core/domain"
 
 func FilterUniqueItems(items []entities.Item) []entities.Item {
 	allKeys := make(map[string]bool)
