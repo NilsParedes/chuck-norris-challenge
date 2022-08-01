@@ -39,8 +39,8 @@ This will take a few minutes.
 
 ## API Reference
 
-#### Get items
+#### Get jokes
 
 ```http
-  GET /api/items
+  GET /api/jokes
 ```

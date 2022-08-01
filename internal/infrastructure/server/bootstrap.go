@@ -9,9 +9,9 @@ import (
 
 func Bootstrap(engine *http.ServeMux) {
 
-	repository := rest.NewChuckNorrisRepository()
-	service := services.NewService(repository)
-	getChuckNorrisHandler := GetChuckNorrisHandler(service)
+	repository := rest.NewJokeRepository()
+	service := services.NewJokeService(repository)
+	getJokesHandler := GetJokesHandler(service)
 
-	engine.HandleFunc("/api/items", getChuckNorrisHandler)
+	engine.HandleFunc("/api/jokes", getJokesHandler)
 }
