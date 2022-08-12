@@ -6,6 +6,10 @@ func FilterUniqueItems(items []entities.Joke) []entities.Joke {
 	allKeys := make(map[string]bool)
 	var uniqueItems []entities.Joke
 
+	// Testeando
+	//
+	//
+
 	for _, item := range items {
 		if value := allKeys[item.Id]; !value {
 			allKeys[item.Id] = true
